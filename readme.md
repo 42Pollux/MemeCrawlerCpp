@@ -5,13 +5,13 @@ For each meme we download, we save their ColorMomentHash. Before a meme is
 added to our local files/database we check for reposts by comparing each 
 ColorMomentHash.
 
-Currently sources are subreddits of https://reddit.com/ and their links are hardcoded.
+Currently sources are subreddits of [reddit](https://reddit.com/) and their links are hardcoded.
 Sources:
-	/r/memes
-	/r/dankmemes
-	/r/meirl
-	/r/dankchristianmemes
-	/r/bikinibottomtwitter
+ * /r/memes
+ * /r/dankmemes
+ * /r/meirl
+ * /r/dankchristianmemes
+ * /r/bikinibottomtwitter
 
 The crawler only grabs images from the frontpage which are usually 22-25 
 images each. A filter is created for each subreddit to prevent a post from 
