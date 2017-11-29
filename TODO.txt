@@ -1,0 +1,3 @@
+#1 rework the DatabaseHandler::getHashList() function to only return the latest 6000 or so items
+#2 longpost detection and different downscaling for thumbnails
+#3 maybe move hash repost detection into RepostFilter.cpp

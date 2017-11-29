@@ -43,10 +43,10 @@ RM = /home/pollux/Programms/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pollux/Projects/MemeCrawler
+CMAKE_SOURCE_DIR = /home/pollux/Repositories/Memes/MemeCrawlerCpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pollux/Projects/MemeCrawler/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MemeCrawler.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/MemeCrawler.dir/flags.make
 
 CMakeFiles/MemeCrawler.dir/main.cpp.o: CMakeFiles/MemeCrawler.dir/flags.make
 CMakeFiles/MemeCrawler.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MemeCrawler.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/main.cpp.o -c /home/pollux/Projects/MemeCrawler/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MemeCrawler.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/main.cpp.o -c /home/pollux/Repositories/Memes/MemeCrawlerCpp/main.cpp
 
 CMakeFiles/MemeCrawler.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MemeCrawler.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Projects/MemeCrawler/main.cpp > CMakeFiles/MemeCrawler.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Repositories/Memes/MemeCrawlerCpp/main.cpp > CMakeFiles/MemeCrawler.dir/main.cpp.i
 
 CMakeFiles/MemeCrawler.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MemeCrawler.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Projects/MemeCrawler/main.cpp -o CMakeFiles/MemeCrawler.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Repositories/Memes/MemeCrawlerCpp/main.cpp -o CMakeFiles/MemeCrawler.dir/main.cpp.s
 
 CMakeFiles/MemeCrawler.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/MemeCrawler.dir/main.cpp.o.provides.build: CMakeFiles/MemeCrawler.dir
 
 CMakeFiles/MemeCrawler.dir/Requester.cpp.o: CMakeFiles/MemeCrawler.dir/flags.make
 CMakeFiles/MemeCrawler.dir/Requester.cpp.o: ../Requester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MemeCrawler.dir/Requester.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/Requester.cpp.o -c /home/pollux/Projects/MemeCrawler/Requester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MemeCrawler.dir/Requester.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/Requester.cpp.o -c /home/pollux/Repositories/Memes/MemeCrawlerCpp/Requester.cpp
 
 CMakeFiles/MemeCrawler.dir/Requester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MemeCrawler.dir/Requester.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Projects/MemeCrawler/Requester.cpp > CMakeFiles/MemeCrawler.dir/Requester.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Repositories/Memes/MemeCrawlerCpp/Requester.cpp > CMakeFiles/MemeCrawler.dir/Requester.cpp.i
 
 CMakeFiles/MemeCrawler.dir/Requester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MemeCrawler.dir/Requester.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Projects/MemeCrawler/Requester.cpp -o CMakeFiles/MemeCrawler.dir/Requester.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Repositories/Memes/MemeCrawlerCpp/Requester.cpp -o CMakeFiles/MemeCrawler.dir/Requester.cpp.s
 
 CMakeFiles/MemeCrawler.dir/Requester.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/MemeCrawler.dir/Requester.cpp.o.provides.build: CMakeFiles/MemeCrawle
 
 CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o: CMakeFiles/MemeCrawler.dir/flags.make
 CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o: ../JSONFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o -c /home/pollux/Projects/MemeCrawler/JSONFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o -c /home/pollux/Repositories/Memes/MemeCrawlerCpp/JSONFilter.cpp
 
 CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Projects/MemeCrawler/JSONFilter.cpp > CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Repositories/Memes/MemeCrawlerCpp/JSONFilter.cpp > CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.i
 
 CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Projects/MemeCrawler/JSONFilter.cpp -o CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Repositories/Memes/MemeCrawlerCpp/JSONFilter.cpp -o CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.s
 
 CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o.provides.build: CMakeFiles/MemeCrawl
 
 CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o: CMakeFiles/MemeCrawler.dir/flags.make
 CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o: ../RepostFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o -c /home/pollux/Projects/MemeCrawler/RepostFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o -c /home/pollux/Repositories/Memes/MemeCrawlerCpp/RepostFilter.cpp
 
 CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Projects/MemeCrawler/RepostFilter.cpp > CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Repositories/Memes/MemeCrawlerCpp/RepostFilter.cpp > CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.i
 
 CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Projects/MemeCrawler/RepostFilter.cpp -o CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Repositories/Memes/MemeCrawlerCpp/RepostFilter.cpp -o CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.s
 
 CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o.provides.build: CMakeFiles/MemeCra
 
 CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o: CMakeFiles/MemeCrawler.dir/flags.make
 CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o: ../ImageHasher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o -c /home/pollux/Projects/MemeCrawler/ImageHasher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o -c /home/pollux/Repositories/Memes/MemeCrawlerCpp/ImageHasher.cpp
 
 CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Projects/MemeCrawler/ImageHasher.cpp > CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Repositories/Memes/MemeCrawlerCpp/ImageHasher.cpp > CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.i
 
 CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Projects/MemeCrawler/ImageHasher.cpp -o CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Repositories/Memes/MemeCrawlerCpp/ImageHasher.cpp -o CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.s
 
 CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o.provides.build: CMakeFiles/MemeCraw
 
 CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o: CMakeFiles/MemeCrawler.dir/flags.make
 CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o: ../DatabaseHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o -c /home/pollux/Projects/MemeCrawler/DatabaseHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o -c /home/pollux/Repositories/Memes/MemeCrawlerCpp/DatabaseHandler.cpp
 
 CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Projects/MemeCrawler/DatabaseHandler.cpp > CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pollux/Repositories/Memes/MemeCrawlerCpp/DatabaseHandler.cpp > CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.i
 
 CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Projects/MemeCrawler/DatabaseHandler.cpp -o CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pollux/Repositories/Memes/MemeCrawlerCpp/DatabaseHandler.cpp -o CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.s
 
 CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o.requires:
 
@@ -221,7 +221,7 @@ MemeCrawler: CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o
 MemeCrawler: CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o
 MemeCrawler: CMakeFiles/MemeCrawler.dir/build.make
 MemeCrawler: CMakeFiles/MemeCrawler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable MemeCrawler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable MemeCrawler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MemeCrawler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -243,6 +243,6 @@ CMakeFiles/MemeCrawler.dir/clean:
 .PHONY : CMakeFiles/MemeCrawler.dir/clean
 
 CMakeFiles/MemeCrawler.dir/depend:
-	cd /home/pollux/Projects/MemeCrawler/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pollux/Projects/MemeCrawler /home/pollux/Projects/MemeCrawler /home/pollux/Projects/MemeCrawler/cmake-build-debug /home/pollux/Projects/MemeCrawler/cmake-build-debug /home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles/MemeCrawler.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pollux/Repositories/Memes/MemeCrawlerCpp /home/pollux/Repositories/Memes/MemeCrawlerCpp /home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug /home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug /home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles/MemeCrawler.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MemeCrawler.dir/depend
 

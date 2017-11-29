@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pollux/Projects/MemeCrawler/DatabaseHandler.cpp" "/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o"
-  "/home/pollux/Projects/MemeCrawler/ImageHasher.cpp" "/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o"
-  "/home/pollux/Projects/MemeCrawler/JSONFilter.cpp" "/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o"
-  "/home/pollux/Projects/MemeCrawler/RepostFilter.cpp" "/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o"
-  "/home/pollux/Projects/MemeCrawler/Requester.cpp" "/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles/MemeCrawler.dir/Requester.cpp.o"
-  "/home/pollux/Projects/MemeCrawler/main.cpp" "/home/pollux/Projects/MemeCrawler/cmake-build-debug/CMakeFiles/MemeCrawler.dir/main.cpp.o"
+  "/home/pollux/Repositories/Memes/MemeCrawlerCpp/DatabaseHandler.cpp" "/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles/MemeCrawler.dir/DatabaseHandler.cpp.o"
+  "/home/pollux/Repositories/Memes/MemeCrawlerCpp/ImageHasher.cpp" "/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles/MemeCrawler.dir/ImageHasher.cpp.o"
+  "/home/pollux/Repositories/Memes/MemeCrawlerCpp/JSONFilter.cpp" "/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles/MemeCrawler.dir/JSONFilter.cpp.o"
+  "/home/pollux/Repositories/Memes/MemeCrawlerCpp/RepostFilter.cpp" "/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles/MemeCrawler.dir/RepostFilter.cpp.o"
+  "/home/pollux/Repositories/Memes/MemeCrawlerCpp/Requester.cpp" "/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles/MemeCrawler.dir/Requester.cpp.o"
+  "/home/pollux/Repositories/Memes/MemeCrawlerCpp/main.cpp" "/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/CMakeFiles/MemeCrawler.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

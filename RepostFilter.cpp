@@ -22,15 +22,6 @@ std::list<std::string> RepostFilter::filterData(std::list<std::string> data) {
     list<string> working_data = data;
     uint a = 0;
     uint b = 0;
-    cout<<"active_filter size init: "<<this->active_filter.size()<<endl;
-    cout<<"working_data size init: "<<working_data.size()<<endl;
-    //for(string x : working_data){
-    //    cout<<"tmp: "<<x<<endl;
-    //}
-    //for(string x : this->active_filter){
-    //    cout<<"tmp: "<<x<<endl;
-    //}
-    //usleep(1000000*20);
     for(string x : data){
         bool duplicate = false;
         for(string y : this->active_filter){
@@ -50,7 +41,7 @@ std::list<std::string> RepostFilter::filterData(std::list<std::string> data) {
             this->active_filter.push_back(x);
         }
     }
-    cout<<"active_filter size: "<<this->active_filter.size()<<endl;
+    //cout<<"active_filter size: "<<this->active_filter.size()<<endl;
     if(this->active_filter.size()>100){                                                   // delete the oldest entries of active_filter
         for(int i = 0; i < this->active_filter.size()-25; i++){                           // so that 50 entries remain
             this->active_filter.pop_front();

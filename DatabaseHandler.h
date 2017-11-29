@@ -19,7 +19,7 @@ typedef struct ExtendedList ExtendedList;
 class DatabaseHandler {
 public:
     DatabaseHandler(const std::string &username, const std::string &password);
-    void addEntry(std::string link, char longpost, std::string hash);
+    void addEntry(std::string link, std::string local, char longpost, std::string hash);
     DuoList getHashList();
     virtual ~DatabaseHandler();
 
@@ -38,6 +38,7 @@ struct ExtendedList {
 
 struct DuoList {
     std::vector<int> id;
+    std::vector<std::string> url;
     std::vector<ExtendedList> hashes;
 };
 

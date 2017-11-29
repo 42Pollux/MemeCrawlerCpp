@@ -1,6 +1,6 @@
 # MemeCrawler C++
 
-Grabs memes of reddit and saves them locally or puts them into a database.
+Grabs memes of reddit and saves them locally (full image or thumbnail) and puts them into a database.
 For each meme we download, we save their ColorMomentHash. Before a meme is 
 added to our local files/database we check for reposts by comparing each 
 ColorMomentHash.
@@ -32,11 +32,13 @@ Required libraries are:
 To start the application you need to specify at least one argument.
 Arguments are: 
 ```
+   Usage: MemeCrawler [options...]
    -u USER       Username used for mysql login
    -p PASSWD     Password used for mysql login
    --restart     Ignores the initial request data
-   --tick SEC    sets time between requests (refreshrate)
-   --local PATH  Saves memes only locally at the specified path
+   --tick SEC    Sets time between requests (refreshrate)
+   --thumbnail   Only saves a 200x200 thumbnail of each image
+   --local PATH  Saves img/thumb to specified path
 ```
 
 Default values are:
@@ -44,7 +46,7 @@ Default values are:
 USER=root
 PASSWD=root
 SEC=600 (10min)
-PATH=""
+PATH="/where/your/file/is/located"
 ```
 
 ## Errors

@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/pollux/Projects/MemeCrawler/DatabaseHandler.cpp
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/DatabaseHandler.cpp
 DatabaseHandler.h
-/home/pollux/Projects/MemeCrawler/DatabaseHandler.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/DatabaseHandler.h
 cppconn/connection.h
 -
 cppconn/driver.h
@@ -20,7 +20,7 @@ cppconn/resultset.h
 cppconn/statement.h
 -
 
-/home/pollux/Projects/MemeCrawler/DatabaseHandler.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/DatabaseHandler.h
 cppconn/connection.h
 -
 cppconn/driver.h
@@ -32,7 +32,7 @@ cppconn/resultset.h
 cppconn/statement.h
 -
 
-/home/pollux/Projects/MemeCrawler/ImageHasher.cpp
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/ImageHasher.cpp
 list
 -
 opencv2/core.hpp
@@ -45,48 +45,60 @@ opencv2/img_hash.hpp
 -
 opencv2/imgproc.hpp
 -
+iostream
+-
 ImageHasher.h
-/home/pollux/Projects/MemeCrawler/ImageHasher.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/ImageHasher.h
 
-/home/pollux/Projects/MemeCrawler/ImageHasher.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/ImageHasher.h
 string
 -
 vector
 -
 list
 -
+opencv2/core.hpp
+-
+opencv2/core/ocl.hpp
+-
+opencv2/highgui.hpp
+-
+opencv2/img_hash.hpp
+-
+opencv2/imgproc.hpp
+-
 
-/home/pollux/Projects/MemeCrawler/JSONFilter.cpp
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/JSONFilter.cpp
 list
 -
 cstring
 -
 JSONFilter.h
-/home/pollux/Projects/MemeCrawler/JSONFilter.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/JSONFilter.h
 
-/home/pollux/Projects/MemeCrawler/JSONFilter.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/JSONFilter.h
 iostream
 -
 vector
 -
 
-/home/pollux/Projects/MemeCrawler/RepostFilter.cpp
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/RepostFilter.cpp
 cstring
 -
 zconf.h
 -
 RepostFilter.h
-/home/pollux/Projects/MemeCrawler/RepostFilter.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/RepostFilter.h
 
-/home/pollux/Projects/MemeCrawler/RepostFilter.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/RepostFilter.h
 iostream
 -
 list
 -
 
-/home/pollux/Projects/MemeCrawler/Requester.cpp
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/Requester.cpp
 Requester.h
-/home/pollux/Projects/MemeCrawler/Requester.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/Requester.h
 curl/curl.h
 -
 curlpp/cURLpp.hpp
@@ -104,7 +116,7 @@ fstream
 functional
 -
 
-/home/pollux/Projects/MemeCrawler/Requester.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/Requester.h
 curlpp/cURLpp.hpp
 -
 curlpp/Easy.hpp
@@ -114,8 +126,10 @@ curlpp/Options.hpp
 string
 -
 
-/home/pollux/Projects/MemeCrawler/main.cpp
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/main.cpp
 iostream
+-
+stdio.h
 -
 cstring
 -
@@ -123,20 +137,26 @@ zconf.h
 -
 sstream
 -
+pthread.h
+-
 Requester.h
-/home/pollux/Projects/MemeCrawler/Requester.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/Requester.h
 JSONFilter.h
-/home/pollux/Projects/MemeCrawler/JSONFilter.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/JSONFilter.h
 RepostFilter.h
-/home/pollux/Projects/MemeCrawler/RepostFilter.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/RepostFilter.h
 ImageHasher.h
-/home/pollux/Projects/MemeCrawler/ImageHasher.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/ImageHasher.h
 DatabaseHandler.h
-/home/pollux/Projects/MemeCrawler/DatabaseHandler.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/DatabaseHandler.h
 mysql_connection.h
-/home/pollux/Projects/MemeCrawler/mysql_connection.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/mysql_connection.h
 mysql_driver.h
-/home/pollux/Projects/MemeCrawler/mysql_driver.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/mysql_driver.h
 mysql_error.h
-/home/pollux/Projects/MemeCrawler/mysql_error.h
+/home/pollux/Repositories/Memes/MemeCrawlerCpp/mysql_error.h
+opencv2/core.hpp
+-
+opencv2/img_hash.hpp
+-
 

@@ -9,11 +9,17 @@
 #include <vector>
 #include <list>
 
+#include <opencv2/core.hpp>     //x
+#include <opencv2/core/ocl.hpp>
+#include <opencv2/highgui.hpp>  //x
+#include <opencv2/img_hash.hpp> //x
+#include <opencv2/imgproc.hpp>  //x
+
 class ImageHasher {
 public:
     ImageHasher();
-    std::list<double> getColorMomentHash(std::string path);
-    float compareColorMomentHashes(double hash1[42], double hash2[42]);
+    std::vector<double> getColorMomentHash(std::string path);
+    float compareColorMomentHashes(cv::Mat hash1, cv::Mat hash2);
 private:
     std::string filePath;
 };

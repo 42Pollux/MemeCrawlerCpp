@@ -8,17 +8,18 @@
 #include <opencv2/highgui.hpp>  //x
 #include <opencv2/img_hash.hpp> //x
 #include <opencv2/imgproc.hpp>  //x
+#include <iostream>
 #include "ImageHasher.h"
 
 ImageHasher::ImageHasher() {}
 
-std::list<double> ImageHasher::getColorMomentHash(std::string path) {
+std::vector<double> ImageHasher::getColorMomentHash(std::string path) {
     cv::Ptr<cv::img_hash::ImgHashBase> algo = cv::img_hash::ColorMomentHash::create();
     cv::Mat input = cv::imread(path);
     cv::Mat hash_input;
 
     algo->compute(input, hash_input);
-    std::list<double> conversionArray;
+    std::vector<double> conversionArray;
     for(int i = 0; i<42; i++){
         conversionArray.push_back(reinterpret_cast<double &&>(hash_input.at<double>(i)));
     }
@@ -26,12 +27,15 @@ std::list<double> ImageHasher::getColorMomentHash(std::string path) {
     return conversionArray;
 }
 
-float ImageHasher::compareColorMomentHashes(double *hash1, double *hash2) {
+float ImageHasher::compareColorMomentHashes(cv::Mat hash1, cv::Mat hash2) {
     cv::Ptr<cv::img_hash::ImgHashBase> algo = cv::img_hash::ColorMomentHash::create();
-    cv::Mat hash_original, hash_var;
-    hash_original = cv::Mat(1, 42, CV_64F, &hash1);
-    hash_var = cv::Mat(1, 42, CV_64F, &hash2);
+    float ret = 100.0f;
+    try {
+        ret = algo->compare(hash1, hash2);
+    } catch (std::exception &e){
+        std::cout<<e.what()<<std::endl;
+    }
 
-    return algo->compare(hash_original, hash_var);
+    return algo->compare(hash1, hash2);
 }
 

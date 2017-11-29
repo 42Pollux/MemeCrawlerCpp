@@ -1,4 +1,4 @@
-# Install script for directory: /home/pollux/Projects/MemeCrawler
+# Install script for directory: /home/pollux/Repositories/Memes/MemeCrawlerCpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pollux/Projects/MemeCrawler/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pollux/Repositories/Memes/MemeCrawlerCpp/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

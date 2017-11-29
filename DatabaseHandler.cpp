@@ -24,9 +24,10 @@ DuoList DatabaseHandler::getHashList() {
 
     stmt = con->createStatement();
     stmt->execute("USE memes");
-    res = stmt->executeQuery("SELECT id, hash FROM memerepos");
+    res = stmt->executeQuery("SELECT id, url, hash FROM memerepos");
     while(res->next()){
         hashList.id.push_back(res->getInt("id"));
+        hashList.url.push_back(res->getString("url"));
         std::string hashString = res->getString("hash");
         //std::cout<<"hashString: "<<hashString<<std::endl;
         size_t pos = 0, j = 0;
@@ -54,7 +55,7 @@ DatabaseHandler::~DatabaseHandler() {
 
 }
 
-void DatabaseHandler::addEntry(std::string link, char longpost, std::string hash) {
+void DatabaseHandler::addEntry(std::string link, std::string local, char longpost, std::string hash) {
     sql::Statement *stmt;
     //sql::ResultSet *res;
 
@@ -64,7 +65,7 @@ void DatabaseHandler::addEntry(std::string link, char longpost, std::string hash
     //std::cout<<"INSERT INTO memerepos(id, url, longpost, hash) VALUES (NULL, '" + link + "', '" + longpost + "', '" + hash + "')"<<std::endl;;
 
     try {
-        stmt->execute("INSERT INTO memerepos(id, url, longpost, hash) VALUES(NULL, '" + link + "', '" + longpost + "', '" + hash + "')");
+        stmt->execute("INSERT INTO memerepos(id, url, local, longpost, hash) VALUES(NULL, '" + link + "', '" + local + "', '" + longpost + "', '" + hash + "')");
     } catch (sql::SQLException &e) {
         using namespace std;
         cout << "# ERR: SQLException in " << __FILE__;

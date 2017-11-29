@@ -16,7 +16,7 @@ public:
     Requester();
     int getFileSize(std::string filePath);
     std::string getData(std::string url);
-    std::string getFile(std::string ulr);
+    std::string getFile(std::string url, std::string localPath);
     size_t FileCallback(FILE *f, char* ptr, size_t size, size_t nmemb);
 
     virtual ~Requester();

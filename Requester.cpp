@@ -27,10 +27,10 @@ Requester::~Requester() {
 }
 
 std::string Requester::getData(std::string url) {
-    curlpp::Cleanup myCleanup;
+    //curlpp::Cleanup myCleanup;
     curlpp::Easy conn;
 
-    std::cout<<"[REQ]: Requesting json from "<<url<<std::endl;
+    //std::cout<<"[REQ]: Requesting json from "<<url<<std::endl;
 
     std::stringstream ss;
     curlpp::Options::WriteStream ws(&ss);
@@ -44,7 +44,7 @@ std::string Requester::getData(std::string url) {
         std::cout<<e.what()<<std::endl;
     }
 
-    std::cout<<"[REQ]: Request successful"<<std::endl;
+    std::cout<<"\033[32m[REQ]: Request successful ("<<url<<")\033[0m"<<std::endl;
     return ss.str();
 }
 size_t Requester::FileCallback(FILE *f, char* ptr, size_t size, size_t nmemb)
@@ -55,7 +55,7 @@ size_t Requester::FileCallback(FILE *f, char* ptr, size_t size, size_t nmemb)
 
 
 
-std::string Requester::getFile(std::string url) {
+std::string Requester::getFile(std::string url, std::string localPath) {
     curlpp::Cleanup myCleanup;
     curlpp::Easy conn;
 
@@ -69,7 +69,7 @@ std::string Requester::getFile(std::string url) {
     }
     newname = newname.substr(0, newname.find("."));
 
-    std::string outputpath = "/home/pollux/Code/datadumb/" + newname + "." + ending;
+    std::string outputpath = localPath + "/" + newname + "." + ending;
     //std::cout<<outputpath<<std::endl;
 
     FILE* file = fopen(outputpath.c_str(), "w");
@@ -105,7 +105,7 @@ std::string Requester::getFile(std::string url) {
                 std::string tmp = url.substr(0, url.find("//"));                    // //i.imgur = good
                 url = tmp + "//i." + url.substr(url.find("imgur"));
                 //std::cout<<"NEW URL: "<<url<<std::endl;
-                return getFile(url);
+                return getFile(url, localPath);
             }
         }
         return "";
