@@ -1,4 +1,5 @@
 # MemeCrawler C++
+*Note: Some features are already described but yet to be implemented*
 
 Grabs memes of reddit and saves them locally (full image or thumbnail) and puts them into a database.
 For each meme we download, we save their ColorMomentHash. Before a meme is 
