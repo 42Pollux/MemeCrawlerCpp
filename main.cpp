@@ -134,6 +134,7 @@ int main(int argc, char* argv[]) {
                 bool FOUND_SIMILAR = false;
                 float comparison = 0.0f;
                 int imageID = 0;
+                char longpost = 'N';
 
                 // Download image and get colorMomentHash
                 string dlImagePath = req.getFile(x, localPath);
@@ -149,6 +150,11 @@ int main(int argc, char* argv[]) {
                 } catch (std::exception &hashExc){
                     cout<<"\033[33mSkipped "<<x<<" (hashing)\033[0m"<<endl;
                     continue;
+                }
+
+                // Check for longposts
+                if(hasher.isLongpost(dlImagePath)){
+                    longpost = 'Y';
                 }
 
                 // Compare each ColorMomentHash of our database with the new one
@@ -205,9 +211,9 @@ int main(int argc, char* argv[]) {
                         tmp = tmp.substr(tmp.find("/")+1);
                     }
                     tmp = "thumb_" + tmp;
-                    dbHandler->addEntry(x, tmp, 'N', hash);
+                    dbHandler->addEntry(x, tmp, longpost, hash);
                     hash = "HASH_PLACEHOLDER";
-                    if(DEBUG){cout<<"[DAB]: Added: NULL, " + x + ", " + tmp + ", N, "<<hash<< endl;}
+                    if(DEBUG){cout<<"[DAB]: Added: NULL, " + x + ", " + tmp + ", " + longpost + ", "<<hash<< endl;}
                     addedCounter++;
                 } else {
                     if(DEBUG){cout<<"\033[33m[REP]: Repost detected! Image skipped ("<<x<<")->("<<allHashes.url[imageID]<<")("<<comparison<<")\033[0m"<<endl;}
@@ -220,6 +226,7 @@ int main(int argc, char* argv[]) {
             cout << "[DAB]: Added " << addedCounter << " new entries!" << endl;
             cout << endl;
         }
+        RESTART = false;
         for(int i=0; i<ticks; i++){
             usleep(1000000);
             if(STOPFLAG) break;

@@ -20,6 +20,7 @@ public:
     ImageHasher();
     std::vector<double> getColorMomentHash(std::string path);
     float compareColorMomentHashes(cv::Mat hash1, cv::Mat hash2);
+    bool isLongpost(std::string path);
 private:
     std::string filePath;
 };

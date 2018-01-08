@@ -39,3 +39,14 @@ float ImageHasher::compareColorMomentHashes(cv::Mat hash1, cv::Mat hash2) {
     return algo->compare(hash1, hash2);
 }
 
+bool ImageHasher::isLongpost(std::string path) {
+    cv::Mat input = cv::imread(path);
+
+    float ratio = (float)input.size().width / (float)input.size().height;
+    if(ratio < 0.75f || ratio > 1.25f) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
